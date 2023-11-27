@@ -19,3 +19,11 @@ h2 {
   text-transform: capitalize;
   letter-spacing: 1px;
 }
+
+.page {
+  text-align: center;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 1120px;
+  padding: 5rem 2rem;
+}
