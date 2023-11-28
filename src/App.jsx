@@ -12,6 +12,8 @@ import {
 
 import { loader as landingLoader } from './pages/Landing';
 
+import { action as contactAction } from './pages/Contact';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -25,6 +27,7 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact />,
+        action: contactAction,
       },
       {
         index: true,
