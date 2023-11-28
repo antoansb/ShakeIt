@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.dark-theme {
+  background: #393e46;
+  color: #f1f5f9;
+}
+
 body {
   background: #f1f5f9;
   color: #0f172a;

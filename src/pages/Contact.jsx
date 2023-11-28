@@ -2,6 +2,7 @@ import { Form, redirect, useNavigation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import Wrapper from '../assets/wrappers/Contact';
+import { useGlobalContext } from '../context';
 
 export const action = async ({ request }) => {
   const formData = await request.formData();
@@ -13,12 +14,14 @@ export const action = async ({ request }) => {
 };
 
 const Contact = () => {
+  const { isDarkTheme } = useGlobalContext();
+
   const navigation = useNavigation();
   const isSubmitting = navigation.state === 'submitting';
 
   return (
     <Wrapper>
-      <Form className="form" method="POST">
+      <Form className={isDarkTheme ? 'dark-theme' : 'form'} method="POST">
         <h2>contact us!</h2>
         <div className="form-row">
           <label htmlFor="name" className="form-label">

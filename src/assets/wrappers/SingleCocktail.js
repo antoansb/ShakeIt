@@ -9,6 +9,10 @@ const Wrapper = styled.article`
   grid-template-rows: auto 1fr;
   border-radius: 0.25rem;
 
+  .dark-theme {
+    background: #060608;
+  }
+
   img {
     height: 15rem;
     width: 100%;

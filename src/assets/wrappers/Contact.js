@@ -1,6 +1,22 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  .dark-theme {
+    width: 100%;
+    max-width: 600px;
+    background: #060608;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 2rem 2.5rem;
+    margin: 3rem auto;
+    .form-input,
+    .form-textarea {
+      background: #393e46;
+      color: #f1f5f9;
+    }
+  }
+
   .form {
     width: 100%;
     max-width: 600px;
@@ -13,6 +29,7 @@ const Wrapper = styled.div`
   }
 
   h2 {
+    font-size: xx-large;
     text-align: center;
     margin-bottom: 2rem;
   }

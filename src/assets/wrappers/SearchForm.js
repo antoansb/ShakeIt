@@ -1,7 +1,19 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  margin-bottom: 6rem;
+  .dark-theme {
+    .form {
+      background: #060608;
+    }
+    .form-input {
+      background: #393e46;
+      color: #f1f5f9;
+    }
+  }
+
+  .form-container {
+    margin-bottom: 6rem;
+  }
 
   .form {
     display: grid;
@@ -16,15 +28,16 @@ const Wrapper = styled.div`
     margin: 3rem auto;
   }
   .form-input {
+    border-radius: 0.25rem;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     width: 100%;
     padding: 0.375rem 0.75rem;
-    border-radius: 0.25rem;
     background: #f1f5f9;
     border: 1px solid #e2e8f0;
   }
   .btn {
+    border-radius: 0.25rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     background: #49a6e9;

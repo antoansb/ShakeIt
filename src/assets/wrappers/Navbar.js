@@ -1,8 +1,24 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.nav`
-  background: #fff;
+  .dark-theme {
+    background: #060608;
+    .nav-link {
+      color: #f1f5f9;
+    }
+    .active {
+      color: #49a6e9;
+    }
+    svg {
+      color: #f1f5f9;
+    }
+  }
+
+  .nav-container {
+    background: #fff;
+  }
   .nav-center {
+    position: relative;
     width: 90vw;
     max-width: 1120px;
     margin: 0 auto;
@@ -21,6 +37,7 @@ const Wrapper = styled.nav`
     flex-direction: column;
     gap: 0.5rem;
     margin-top: 1rem;
+    font-size: larger;
   }
   .nav-link {
     text-decoration: none;

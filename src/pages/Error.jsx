@@ -18,7 +18,8 @@ const Error = () => {
   return (
     <Wrapper>
       <div>
-        <h2>something went wrong...</h2>;
+        <h2>something went wrong...</h2>
+        <Link to="/">back home</Link>
       </div>
     </Wrapper>
   );
